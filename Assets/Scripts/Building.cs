@@ -6,8 +6,7 @@ using UnityEngine;
 /// Base class for building on the map that hold a Resource inventory and that can be interacted with by Unit.
 /// This Base class handle modifying the inventory of resources.
 /// </summary>
-public abstract class Building : MonoBehaviour,
-    UIMainScene.IUIInfoContent
+public abstract class Building : MonoBehaviour, UIMainScene.IUIInfoContent
 {
     //need to be serializable for the save system, so maybe added the attribute just when doing the save system
     [System.Serializable]
@@ -17,9 +16,8 @@ public abstract class Building : MonoBehaviour,
         public int Count;
     }
 
-    [Tooltip("-1 is infinite")]
-    public int InventorySpace = -1;
-    
+    [Tooltip("-1 is infinite")] public int InventorySpace = -1;
+
     protected List<InventoryEntry> m_Inventory = new List<InventoryEntry>();
     public List<InventoryEntry> Inventory => m_Inventory;
 
@@ -30,13 +28,13 @@ public abstract class Building : MonoBehaviour,
     {
         //as we use the shortcut -1 = infinite amount, we need to actually set it to max value for computation following
         int maxInventorySpace = InventorySpace == -1 ? Int32.MaxValue : InventorySpace;
-        
+
         if (m_CurrentAmount == maxInventorySpace)
             return amount;
 
         int found = m_Inventory.FindIndex(item => item.ResourceId == resourceId);
         int addedAmount = Mathf.Min(maxInventorySpace - m_CurrentAmount, amount);
-        
+
         //couldn't find an entry for that resource id so we add a new one.
         if (found == -1)
         {
@@ -59,7 +57,7 @@ public abstract class Building : MonoBehaviour,
     public int GetItem(string resourceId, int requestAmount)
     {
         int found = m_Inventory.FindIndex(item => item.ResourceId == resourceId);
-        
+
         //couldn't find an entry for that resource id so we add a new one.
         if (found != -1)
         {
@@ -67,7 +65,8 @@ public abstract class Building : MonoBehaviour,
             m_Inventory[found].Count -= amount;
 
             if (m_Inventory[found].Count == 0)
-            {//no more of that resources, so we remove it
+            {
+                //no more of that resources, so we remove it
                 m_Inventory.RemoveAt(found);
             }
 
