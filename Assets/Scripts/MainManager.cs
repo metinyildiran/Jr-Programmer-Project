@@ -5,7 +5,7 @@ using System.IO;
 public class MainManager : MonoBehaviour
 {
     // Singleton
-    public static MainManager Instance;
+    public static MainManager Instance { get; private set; }
 
     public Color TeamColor;
 
@@ -19,7 +19,7 @@ public class MainManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
-        
+
         LoadColor();
     }
 
