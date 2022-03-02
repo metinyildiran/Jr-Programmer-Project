@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93f673db-71e7-4676-919f-4eba2d42a192" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ProductivityUnit.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ProductivityUnit.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jr-Programmer-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jr-Programmer-Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ResourcePile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ResourcePile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UserControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UserControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Optimization/Scenes/Optimization.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Optimization/Scenes/Optimization.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Optimization/Scripts/OptimUnit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Optimization/Scripts/OptimUnit.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
